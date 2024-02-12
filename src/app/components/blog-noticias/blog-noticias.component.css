@@ -6,7 +6,7 @@
 
 .ContenedorFormulario, .ContenedorNoticia{
  width: 100%;
- border: 2px solid blue;
+ border: 2px solid gray;
  padding: 2px;
 }
 
