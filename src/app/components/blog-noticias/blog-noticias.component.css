@@ -1,0 +1,27 @@
+.ContenedorBlog{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.ContenedorFormulario, .ContenedorNoticia{
+ width: 100%;
+ border: 2px solid blue;
+ padding: 2px;
+}
+
+.ContenedorFormulario input{
+width: 95%;
+padding: 10px;
+}
+
+.ContenedorFormulario label{
+padding: 2px;
+display: block;
+margin-top: 2px;
+}
+
+.btnPublicar{
+    margin-top: 10px;
+}
+

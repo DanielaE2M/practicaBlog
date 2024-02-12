@@ -1,0 +1,44 @@
+
+<section class="ContenedorBlog"> 
+    <div class="ContenedorFormulario">
+        <h1>
+            FORMULARIO BLOG
+        </h1>
+       
+        <div class="div-titulo">
+            <label for="Titulo Noticia" id="titulo">Titulo Noticia </label>
+            <input type="text" id="Titulo Noticia" placeholder="Introducir titulo de la noticia" [(ngModel)]="nuevaNoticia.Titulo">
+        </div>
+        <div class="div-imagen">
+            <label for="Imagen Noticia" id="imagen">Imagen Noticia </label>
+            <input type="text" id="Imagen Noticia" placeholder="Introducir url imagen" [(ngModel)]="nuevaNoticia.Imagen">
+        </div>
+        <div class="div-cuerpoNoticia">
+            <label for="Cuerpo Noticia" id="cuerpo">Cuerpo Noticia </label>
+            <input type="text" id="Cuerpo Noticia" placeholder="Introducir cuerpo de la noticia" [(ngModel)]="nuevaNoticia.Cuerpo">
+        </div>
+        <div class="div-fecha">
+            <label for="Fecha Noticia" id="fecha">Fecha Noticia </label>
+            <input type="text" id="Fecha Noticia" placeholder="Introducir fecha de la noticia" [(ngModel)]="nuevaNoticia.Fecha">
+        </div>
+
+            <button class="btnPublicar" (click)="publicarNoticia()">
+                Publicar
+            </button>
+  </div>
+
+
+  <div class=" ContenedorNoticia">
+    <h1>PUBLICACIÓN DE NOTICIAS</h1>
+    <div>
+        <section class="PrimeraNoticia" [innerHTML]="cargarNoticia()">
+        </section>
+    </div>
+  </div>
+
+
+
+
+
+
+
